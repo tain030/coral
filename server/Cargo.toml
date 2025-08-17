@@ -4,3 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+anyhow = "1.0.99"
+nostr-sdk = "0.43.0"
+tokio = { version = "1.47.1", features = ["full"] }
+sui_sdk = { git = "https://github.com/mystenlabs/sui", package = "sui-sdk" }
