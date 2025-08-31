@@ -1,0 +1,9 @@
+[package]
+name = "coral-schema"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+diesel = { workspace = true, features = ["postgres", "r2d2"] }
+diesel-migrations.workspace = true
+sui-indexer-alt-framework.workspace = true
