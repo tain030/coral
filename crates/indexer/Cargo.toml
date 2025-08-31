@@ -1,0 +1,27 @@
+[package]
+name = "coral-indexer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio.workspace = true
+anyhow.workspace = true
+dotenvy.workspace = true
+clap = { workspace = true, features = ["derive"] }
+url.workspace = true
+async-trait.workspace = true
+diesel = { workspace = true, features = ["postgres", "r2d2"] }
+diesel-async = { workspace = true, features = [
+  "bb8",
+  "postgres",
+  "async-connection-wrapper",
+] }
+diesel_migrations.workspace = true
+
+sui-indexer-alt-framework.workspace = true
+
+coral-schema = { path = "../schema" }
+
+[[bin]]
+name = "coral-indexer"
+path = "src/main.rs"

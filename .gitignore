@@ -1,0 +1,11 @@
+# misc
+.env
+
+# Move build directory
+build
+
+# IDE
+**/.history/
+**/.vscode/
+**/.idea/
+**/target/

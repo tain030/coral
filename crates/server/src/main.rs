@@ -2,14 +2,11 @@
 use anyhow::Result;
 use axum::{
     Router,
-    extract::{Json, State},
-    response::IntoResponse,
     routing::{get, post},
 };
-use serde::{Deserialize, Serialize};
 use sui_sdk::{
     SuiClient, SuiClientBuilder,
-    types::{base_types::SuiAddress, crypto::SuiKeyPair, transaction::TransactionData},
+    types::{base_types::SuiAddress, crypto::SuiKeyPair},
 };
 use tokio::net::TcpListener;
 
